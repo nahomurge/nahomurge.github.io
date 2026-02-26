@@ -1,0 +1,28 @@
+
+body {
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.dark-mode {
+    background-color: #111 !important;
+    color: #f5f5f5 !important;
+}
+
+button#darkToggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
